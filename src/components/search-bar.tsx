@@ -11,8 +11,8 @@ const MainContainer = styled.div`
     align-items: center;
     width: 80vw;
     height: 8rem;
-    background-color: ${colorPalette.green};
-    box-shadow: 0px 10px 10px 10px ${colorPalette.green};
+    background-color: ${colorPalette.creme};
+    box-shadow: 0px 10px 10px 10px ${colorPalette.creme};
 `;
 
 const SearchBarContainer = styled.div`
