@@ -1,18 +1,17 @@
 import styled from "styled-components";
 import colorPalette from "../assets/color-palette";
-// import { ReactComponent as SearchIcon } from "../assets/icons/search.svg";
-import SearchIcon from "../assets/icons/search.svg";
-import CrossIcon from "../assets/icons/x.svg";
+import SearchIcon from "../assets/icons/search.svg?react";
+import CrossIcon from "../assets/icons/x.svg?react";
+import { SetStateAction, useState } from "react";
 
 const MainContainer = styled.div`
     position: fixed;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80vw;
     height: 8rem;
-    background-color: ${colorPalette.creme};
-    box-shadow: 0px 10px 10px 10px ${colorPalette.creme};
 `;
 
 const SearchBarContainer = styled.div`
@@ -23,11 +22,12 @@ const SearchBarContainer = styled.div`
     height: 4rem;
     width: 100%;
     margin: 0 2rem;
-    background-color: ${colorPalette.light_green};
+    background-color: ${colorPalette.creme};
+    border: 1px solid ${colorPalette.brown}
 `;
 
 const SearchBarStyled = styled.input`
-    background-color: ${colorPalette.light_green};
+    background-color: ${colorPalette.creme};
     border: 0px solid;
     outline: none;
     height: 3rem;
@@ -35,7 +35,29 @@ const SearchBarStyled = styled.input`
     font-size: 1.1rem;
 `;
 
+const SearchIconStyled = styled(SearchIcon)`
+    margin: 0 1rem;
+    stroke: ${colorPalette.brown};
+`;
+
+const CrossIconStyled = styled(CrossIcon)`
+    margin: 0 1rem;
+    stroke: ${colorPalette.brown};
+    cursor: pointer;
+`;
+
 const SearchBar = () => {
+
+    const [barContent, setBarContent] = useState("");
+
+    const handleInputChange = (e: { target: { value: SetStateAction<string>; }; }) => {
+        setBarContent(e.target.value);
+    }
+
+    const deleteBarContent = () => {
+        setBarContent("");
+    };
+
     return (
         <MainContainer>
             <div style={{
@@ -49,16 +71,10 @@ const SearchBar = () => {
                 color: "white",
             }}>LOGO</div>
             <SearchBarContainer>
-                {/* <SearchIcon/> */}
-                <img src={SearchIcon} alt="icon" style={{margin: "0 1rem"}}/>
-                <SearchBarStyled type="text" placeholder="Search ingredients ..." />
-                <img src={CrossIcon} alt="icon" style={{margin: "0 1rem"}}/>
+                <SearchIconStyled/>
+                <SearchBarStyled value={barContent} onChange={handleInputChange} type="text" placeholder="Search ingredients ..." />
+                <CrossIconStyled onClick={deleteBarContent} />
             </SearchBarContainer>
-            <div style={{
-                backgroundColor: "yellow",
-            }}>
-
-            </div>
         </MainContainer>
     )
 }
