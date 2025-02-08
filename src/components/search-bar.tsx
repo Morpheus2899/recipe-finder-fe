@@ -12,6 +12,9 @@ const MainContainer = styled.div`
     align-items: center;
     width: 80vw;
     height: 8rem;
+    background-color: white;
+    box-shadow: 0px 10px 10px 10px white;
+    z-index: 1;
 `;
 
 const SearchBarContainer = styled.div`
