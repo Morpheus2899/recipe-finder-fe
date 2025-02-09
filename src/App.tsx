@@ -16,8 +16,8 @@ const Container = styled.div`
   	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 12rem 8rem 8rem 8rem;
-	gap: 2rem;
+	margin: 12rem 12rem 12rem 12rem;
+	gap: 1.5rem;
 `;
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
 			<Container>
 				<RecipeCard 
 					imgSrc={Immagine1}
-					title={"Titolo molto molto lungo, ancora più lungo"}
+					title={"Titolo 1"}
 				/>
 				<RecipeCard 
 					imgSrc={Immagine2}
