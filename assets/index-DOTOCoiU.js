@@ -100,5 +100,5 @@ Error generating stack: `+u.message+`
 	flex-wrap: wrap;
 	justify-content: center;
 	margin: 12rem 12rem 12rem 12rem;
-	gap: 2rem;
+	gap: 1.5rem;
 `;function Xh(){return pe.jsxs(Yh,{children:[pe.jsx(Qh,{}),pe.jsxs(Gh,{children:[pe.jsx(Je,{imgSrc:Cn,title:"Titolo molto molto lungo, ancora più lungo"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"})]})]})}Dp.createRoot(document.getElementById("root")).render(pe.jsx(it.StrictMode,{children:pe.jsx(Xh,{})}));
