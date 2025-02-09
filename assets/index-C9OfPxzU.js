@@ -89,7 +89,7 @@ Error generating stack: `+u.message+`
         transform: scale(1.05);
         background-color: ${Rn.light_green};
     }
-`,Je=({imgSrc:i,title:a})=>pe.jsxs(Kh,{children:[pe.jsx("img",{src:i,alt:"recipe img",style:{width:"100%",height:"70%",objectFit:"cover",borderRadius:"1rem"}}),pe.jsx("h2",{children:a})]}),Cn="/assets/Pasta%20con%20salsiccia-Dr0F35hR.jpg",_n="/assets/Ratatouille-recipe-500x500-CoEsETxa.jpg",Yh=Wt.div`
+`,Je=({imgSrc:i,title:a})=>pe.jsxs(Kh,{children:[pe.jsx("img",{src:i,alt:"recipe img",style:{width:"100%",height:"70%",objectFit:"cover",borderRadius:"1rem"}}),pe.jsx("h2",{children:a})]}),Cn="/recipe-finder-fe/assets/Pasta%20con%20salsiccia-Dr0F35hR.jpg",_n="/recipe-finder-fe/assets/Ratatouille-recipe-500x500-CoEsETxa.jpg",Yh=Wt.div`
     display: flex;
     flex-direction: column;
 	width: 100vw;
@@ -99,6 +99,6 @@ Error generating stack: `+u.message+`
   	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	margin: 12rem 8rem 8rem 8rem;
+	margin: 12rem 12rem 12rem 12rem;
 	gap: 2rem;
 `;function Xh(){return pe.jsxs(Yh,{children:[pe.jsx(Qh,{}),pe.jsxs(Gh,{children:[pe.jsx(Je,{imgSrc:Cn,title:"Titolo molto molto lungo, ancora più lungo"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"}),pe.jsx(Je,{imgSrc:Cn,title:"Titolo 1"}),pe.jsx(Je,{imgSrc:_n,title:"Titolo 2"})]})]})}Dp.createRoot(document.getElementById("root")).render(pe.jsx(it.StrictMode,{children:pe.jsx(Xh,{})}));
